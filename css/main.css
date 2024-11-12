@@ -436,8 +436,9 @@ button:hover {
 
 .container2 {
   /* border-radius: 50px; */
-  background: url('../images/delivery1.jpg');
-  background-size: 2000px 1000px;
+  background: url('../images/delivery1.jpg') no-repeat center;
+  transform: rotate(180deg);
+  background-size: 2900px 1500px;
   width: 100%; /* Максимальная ширина контейнера */
   margin: 0 auto; /* Центрирование контейнера */
 }
