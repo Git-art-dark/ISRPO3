@@ -2,6 +2,11 @@ html {
   height: 100%;
 }
 
+.img_logo {
+  width: 40%;
+  margin-top: 7px;
+}
+
 body {
   font-family: 'Comfortaa', Arial, Helvetica, sans-serif, sans-serif;
   margin: 0;
@@ -37,8 +42,7 @@ body {
 .main-logo {
   width: 155px;
   margin-left: 30px;
-  font-size: 40px;
-    
+  font-size: 40px; 
 }
 
 .header_right {
@@ -112,24 +116,30 @@ button:hover {
   text-align: left;
   top: 160px;
   z-index: 94034;
-  }
+}
+
 #st-2.st-left {
   left: 0px;
 }
+
 #st-2.st-hidden.st-left {
   left: -40px;
 }
+
 #st-2.st-hidden {
   width: 80px;
 }
+
 #st-2.st-preview {
   display: none!important;
   opacity: 0!important;
 }
+
 #st-2 > div {
   clear: left;
   float: left;
 }
+
 #st-2 .st-btn {
   border-radius: 50px;
   -moz-box-sizing: border-box;
@@ -388,6 +398,7 @@ button:hover {
   color: white;
   font-size: 120px;
   font-weight: 400;
+  margin-bottom: 50px;
 }
 
 .second-title {
@@ -403,3 +414,110 @@ button:hover {
 
 
 /* end welcome page */
+
+/* Общие стили для контейнера */
+
+.title-menu {
+  margin-left: 15%;
+  padding-bottom: 1px;
+  width: 70%;
+  text-align: center;
+  border-radius: 80px;
+  box-shadow: 20px 20px 50px  rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.row {
+  padding-top: 22px;
+}
+
+
+.container2 {
+  /* border-radius: 50px; */
+  background: url('../images/delivery1.jpg');
+  background-size: 2000px 1000px;
+  width: 100%; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
+}
+
+/* Стили для списка фильтров */
+#filter-list {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0 0 20px; /* Отступ снизу */
+  display: flex; /* Используем flex для горизонтального расположения */
+  justify-content: center; /* Центрируем фильтры */
+}
+
+.filter {
+  padding: 10px 20px; /* Отступы для фильтров */
+  margin: 0 5px; /* Отступы между фильтрами */
+  cursor: pointer; /* Указатель при наведении */
+  background-color: #007bff; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border-radius: 5px; /* Закругленные углы */
+  transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.filter:hover {
+  background-color: #0056b3; /* Цвет при наведении */
+}
+
+.filter.active {
+  background-color: #0056b3; /* Активный фильтр */
+}
+
+/* Стили для портфолио */
+#portfolio {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  display: flex; /* Используем flex для горизонтального расположения */
+  flex-wrap: wrap; /* Позволяем переносить элементы на новую строку */
+  justify-content: center; /* Центрируем элементы */
+}
+
+.item {
+  position: relative; /* Для абсолютного позиционирования элементов внутри */
+  margin: 10px; /* Отступы между элементами */
+  width: 200px; /* Ширина элемента */
+  text-align: center; /* Центрируем текст */
+  transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+
+.item:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.item:hover h2.white{
+  background-color: #13131a;
+  box-shadow: 0 0 0 2px #13131a, 0 0 0 4px darkgoldenrod;
+}
+
+/* Стили для изображений */
+.item img {
+  width: 100%; /* Ширина изображения 100% от родительского элемента */
+  border-radius: 5px; /* Закругленные углы изображения */
+  cursor: pointer;
+}
+
+/* Стили для цен */
+h2.white {
+  color: #fff; /* Цвет текста */
+  margin: 1px 0 0; /* Отступы */
+  font-size: 18px; /* Размер шрифта */
+  border-radius: 50px;
+  width: 70px;
+  padding: 5px 0px 5px 0px;
+  margin-left: 70px;
+  height: 20px;
+  background-color: #13131a;
+}
+
+
+h2.white1 {
+  color: #fff;
+  margin: 10px 0px 40px 0px
+}
