@@ -55,7 +55,15 @@ body {
 }
 
 .offer-link {
-  display: block
+  display: block;
+  transition: .9s linear;
+  transition-delay: 500ms;
+}
+
+.offer-link:hover {
+  text-decoration: underline darkgoldenrod;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
 }
 
 a.text-header {
