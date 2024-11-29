@@ -429,6 +429,18 @@ button:hover {
   -webkit-backdrop-filter: blur(8px);
 }
 
+.down-menu {
+  margin-top: .5em;
+  margin-left: 15%;
+  padding-bottom: 1px;
+  width: 20%;
+  text-align: center;
+  border-radius: 80px;
+  box-shadow: 20px 20px 50px  rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+}
+
 .row {
   padding-top: 22px;
 }
@@ -479,6 +491,22 @@ button:hover {
   justify-content: center; /* Центрируем элементы */
 }
 
+.infofood {
+  background-color: rgba(218, 165, 32, 0.2);
+  text-align: start;
+  position: relative;
+  border-radius: 25px;
+  padding: 15px;
+  transition: backdrop-filter 0.9s, transform 0.9s, background-color 0.9s;
+  cursor: pointer;
+}
+
+.infofood:hover {
+  transform: scale(1.2);
+  position: relative;
+  background-color: rgb(218, 165, 32);
+}
+
 .item {
   position: relative; /* Для абсолютного позиционирования элементов внутри */
   margin: 10px; /* Отступы между элементами */
@@ -515,6 +543,7 @@ h2.white {
   margin-left: 70px;
   height: 20px;
   background-color: #13131a;
+  cursor: pointer;
 }
 
 
