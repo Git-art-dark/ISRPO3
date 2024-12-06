@@ -48,3 +48,22 @@ function onScroll(event){
     });
 
 };
+
+
+function shareTelegram() {
+    const url = encodeURIComponent(window.location.href); // Кодирует текущий URL
+    const text = encodeURIComponent('Проверьте это!');
+    window.open(`https://t.me/share/url?url=${url}&text=${text}`,'_blank');
+}
+
+function shareWhatsApp() {
+    const url = encodeURIComponent(window.location.href); // Кодирует текущий URL
+    const text = encodeURIComponent('Проверьте это!'); // Сообщение для дележа
+    window.open(`https://wa.me/?text=${text} ${url}`, '_blank');
+}
+
+function shareVK() {
+    const url = encodeURIComponent(window.location.href); // Кодирует текущий URL
+    const title = encodeURIComponent('Проверьте это!'); // Заголовок для дележа
+    window.open(`https://vk.com/share.php?url=${url}&title=${title}`, '_blank');
+}
