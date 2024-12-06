@@ -551,3 +551,42 @@ h2.white1 {
   color: #fff;
   margin: 10px 0px 40px 0px
 }
+
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* Настройте высоту секции по необходимости */
+}
+
+.title {
+  text-align: center; /* Центрирует текст по горизонтали */
+  margin: 20px 0; /* Добавляет отступы сверху и снизу */
+  font-size: 2.5em; /* Увеличивает размер шрифта заголовка */
+  color: #dfdbdb; /* Устанавливает цвет шрифта */
+  font-family: 'Arial', sans-serif; /* Замените на желаемый шрифт */
+  text-transform: uppercase; /* Преобразует текст в верхний регистр */
+  letter-spacing: 2px; /* Увеличивает расстояние между буквами */
+}
+
+.desc-text {
+  text-align: justify; /* Выравнивает текст по обе стороны */
+  font-size: 1.2em; /* Увеличивает размер шрифта для текста */
+  line-height: 1.5; /* Увеличивает межстрочный интервал */
+  color: #666; /* Устанавливает более светлый цвет для текста */
+  padding: 0 20px; /* Добавляет внутренние отступы */
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для текста */
+  border-radius: 10px; /* Закругляет углы блока с текстом */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта глубины */
+}
+
+.description_content {
+  background-color: rgb(218, 122, 32); /* Укажите путь к изображению */
+  background-size: cover; /* Покрывает весь блок фоном */
+  background-position: center; /* Центрирует изображение в блоке */
+  height: 50%; /* Устанавливает высоту блока */
+  min-height: 220px; /* Минимальная высота для видимости фона */
+}
+.title-menu{
+  height: 50%
+}
