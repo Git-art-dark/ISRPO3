@@ -430,8 +430,11 @@ button:hover {
 }
 
 .down-menu {
-  margin-top: .5em;
-  margin-left: 15%;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  margin: 0.5em auto;
+  margin-left: 40%;
   padding-bottom: 1px;
   width: 20%;
   text-align: center;
@@ -450,7 +453,7 @@ button:hover {
   /* border-radius: 50px; */
   background: url('../images/delivery1.jpg') no-repeat center;
   transform: rotate(180deg);
-  background-size: 2900px 1500px;
+  background-size: 3000px 1700px;
   width: 100%; /* Максимальная ширина контейнера */
   margin: 0 auto; /* Центрирование контейнера */
 }
@@ -581,7 +584,7 @@ h2.white1 {
 }
 
 .description_content {
-  background-color: rgb(218, 122, 32); /* Укажите путь к изображению */
+  background-color: chocolate; /* Укажите путь к изображению */
   background-size: cover; /* Покрывает весь блок фоном */
   background-position: center; /* Центрирует изображение в блоке */
   height: 50%; /* Устанавливает высоту блока */
@@ -589,4 +592,39 @@ h2.white1 {
 }
 .title-menu{
   height: 50%
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column; /* Размещает заголовок над элементами */
+  align-items: center; /* Центрирует элементы по горизонтали */
+}
+
+.items {
+  display: flex; /* Делает элементы гибкими */
+  flex-wrap: wrap; /* Переносит элементы на следующую строку при необходимости */
+  justify-content: center; /* Центрирует элементы по горизонтали */
+  list-style-type: none; /* Убирает маркеры у списка */
+  padding: 0; /* Убирает отступы */
+}
+
+.item {
+  margin: 10px; /* Отступы между элементами */
+  text-align: center; /* Центрирует текст под изображениями */
+}
+
+.item img {
+  max-width: 100%; /* Устанавливает максимальную ширину для изображений */
+  height: auto; /* Автоматически подстраивает высоту для сохранения пропорций */
+}
+
+.item img {
+  width: 200px; /* Установите желаемую ширину */
+  height: auto; /* Автоматически подстраивает высоту для сохранения пропорций */
+}
+
+@media (max-width: 600px) {
+  .item img {
+      width: 100px; /* Уменьшите размер для маленьких экранов */
+  }
 }
